@@ -4,13 +4,23 @@
 }
 
 .clock-container {
+    width: 420px;
+    height: 262px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Abel', sans-serif;
+    color: aliceblue;
     font-size: 30px;
+    background-image: url("https://img02.fireden.net/co/image/1504/45/1504452077769.jpg");
+    /* background-color: aliceblue */
 }
 
 .clock-titles {
     padding: 5px;
+}
+
+.clock-background {
+    display: flex;
+    justify-content: center;
 }
