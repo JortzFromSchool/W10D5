@@ -14,17 +14,19 @@ class Tabs extends React.Component {
     }
 
     render(){
+        //debugger
         return (
             <div>
-                <ul>
-                    {this.props.tabs.map((el, idx) => {
-                        <header onClick={this.changeSelected(idx)}>
+                <ul className="tab-header-container">
+                    {(this.props.tabs.map((el, idx) => {
+                        return(
+                        <header className="tab-headings" key={idx} onClick={() => {this.changeSelected(idx)}}>
                             <h1>{el.title}</h1>
-                        </header>
-                    })}
+                        </header>)
+                    }))}
                 </ul>
-                <article>
-                    <p>{this.props.tabs[this.selected].content}</p>
+                <article className="tab-content-container">
+                    <p>{this.props.tabs[this.state.selected].content}</p>
                 </article>
             </div>
         );

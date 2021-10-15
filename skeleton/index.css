@@ -24,3 +24,17 @@
     display: flex;
     justify-content: center;
 }
+
+.tab-header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-headings {
+    padding: 5px;
+}
+
+.tab-content-container {
+    display: flex;
+    justify-content: center;
+}
