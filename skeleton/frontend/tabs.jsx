@@ -25,9 +25,12 @@ class Tabs extends React.Component {
                         </header>)
                     }))}
                 </ul>
-                <article className="tab-content-container">
-                    <p>{this.props.tabs[this.state.selected].content}</p>
-                </article>
+                <div className="tab-content-container">
+                    <article className="article">
+                        <p className="content">{this.props.tabs[this.state.selected].content}</p>
+                    </article>
+                </div>
+
             </div>
         );
     }
