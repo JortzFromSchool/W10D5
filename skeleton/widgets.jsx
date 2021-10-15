@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Congrats from './congrats';
+import Clock from './frontend/clock';
 
-const Root = (props) => { return <div >Working</div> };
+const Root = (props) => { return <div ><Clock /></div> };
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
