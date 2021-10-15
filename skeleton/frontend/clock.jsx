@@ -23,7 +23,7 @@ class Clock extends React.Component {
         return (
             <div>
                 <h1>Clock Widget</h1>
-                <div>{this.state.clock.getHours()}:{this.state.clock.getMinutes()}:{this.state.clock.getSeconds()}</div>
+                <div id="time">{this.state.clock.getHours()}:{this.state.clock.getMinutes()}:{this.state.clock.getSeconds()}</div>
             </div>
         )
     }
