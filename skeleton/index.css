@@ -2,3 +2,15 @@
    font-family: 'Abel', sans-serif;
    font-size: 30px;
 }
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+}
+
+.clock-titles {
+    padding: 5px;
+}

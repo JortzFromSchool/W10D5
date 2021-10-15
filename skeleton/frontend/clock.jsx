@@ -21,9 +21,16 @@ class Clock extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>Clock Widget</h1>
-                <div id="time">{this.state.clock.getHours()}:{this.state.clock.getMinutes()}:{this.state.clock.getSeconds()}</div>
+            <div className="clock-container">
+                <div className="clock-titles">
+                    <div>Date:</div>
+                    <div>Time:</div>
+                </div>
+                <div>
+                    <div id="time">{this.state.clock.getHours()}:{this.state.clock.getMinutes()}:{this.state.clock.getSeconds()}</div>
+                    <div id="date">{this.state.clock.getMonth() + 1}/{this.state.clock.getDate()}/{this.state.clock.getFullYear()}</div>
+                </div>
+               
             </div>
         )
     }
